@@ -42,12 +42,10 @@
       <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
 
     {% elsif post.collection == 'publications' %}
-      {% assign author = post.author | default: site.author.name %}
+      {% assign author = post.author | default: "Ahmad Zorkot" %}
       {% assign year = post.date | default: "1900-01-01" | date: "%Y" %}
       <p>
-        <strong>{{ author }}</strong> ({{ year }}). 
-        <em>{{ post.title }}</em>. 
-        <u>{{ post.venue }}</u>.
+        {{ author }}. <em>{{ post.title }}</em>. {{ post.venue }}, {{ year }}.
         {% if post.paperurl %}
           <a href="{{ post.paperurl }}" target="_blank">[PDF]</a>
         {% endif %}
@@ -95,4 +93,5 @@
 
   </article>
 </div>
+
 
