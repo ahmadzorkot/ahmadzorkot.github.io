@@ -4,7 +4,7 @@ title: "Approximation of deterministic mean field games under polynomial growth 
 collection: publications
 category: journal
 date: 2024-01-01
-venue: 'Joournal of Dynamics and Games'
+venue: 'Journal of Dynamics and Games'
 paperurl: 'https://www.aimsciences.org/article/doi/10.3934/jdg.2023018'
 arxivurl: "https://arxiv.org/pdf/2305.01445"
 ---
