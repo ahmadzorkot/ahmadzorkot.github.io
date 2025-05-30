@@ -8,32 +8,35 @@ author_profile: true
 <h1>Publications</h1>
 
 {% if site.author.googlescholar %}
-<p>You can also find my articles on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
+<p>You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</p>
 {% endif %}
 
 <h2>Published Articles</h2>
 <ol>
-{% assign published = site.publications | where: "category", "journal" | sort: "date" | reverse %}
-{% for post in published %}
-  <li>
-    {{ post.author }}. <em>{{ post.title }}</em>. {{ post.venue }}, {{ post.date | date: "%Y" }}.
-    {% if post.paperurl %}<a href="{{ post.paperurl }}">[article]</a>{% endif %}
-    {% if post.arxivurl %} <a href="{{ post.arxivurl }}">[arXiv]</a>{% endif %}
-  </li>
-{% endfor %}
+  {% assign published = site.publications | where: "category", "journal" | sort: "date" | reverse %}
+  {% for post in published %}
+    <li>
+      {{ post.author }}. <em>{{ post.title }}</em>. {{ post.venue }}, {{ post.date | date: "%Y" }}.
+      {% if post.paperurl %} <a href="{{ post.paperurl }}">[article]</a>{% endif %}
+      {% if post.arxivurl %} <a href="{{ post.arxivurl }}">[arXiv]</a>{% endif %}
+      {% if post.bibtexurl %} <a href="{{ post.bibtexurl }}">[BibTeX]</a>{% endif %}
+    </li>
+  {% endfor %}
 </ol>
 
 <h2>Preprints</h2>
 <ol>
-{% assign preprints = site.publications | where: "category", "preprint" | sort: "date" | reverse %}
-{% for post in preprints %}
-  <li>
-    {{ post.author }}. <em>{{ post.title }}</em>. {{ post.venue }}, {{ post.date | date: "%Y" }}.
-    {% if post.paperurl %}<a href="{{ post.paperurl }}">[article]</a>{% endif %}
-    {% if post.arxivurl %} <a href="{{ post.arxivurl }}">[arXiv]</a>{% endif %}
-  </li>
-{% endfor %}
+  {% assign preprints = site.publications | where: "category", "preprint" | sort: "date" | reverse %}
+  {% for post in preprints %}
+    <li>
+      {{ post.author }}. <em>{{ post.title }}</em>. {{ post.venue }}, {{ post.date | date: "%Y" }}.
+      {% if post.paperurl %} <a href="{{ post.paperurl }}">[article]</a>{% endif %}
+      {% if post.arxivurl %} <a href="{{ post.arxivurl }}">[arXiv]</a>{% endif %}
+      {% if post.bibtexurl %} <a href="{{ post.bibtexurl }}">[BibTeX]</a>{% endif %}
+    </li>
+  {% endfor %}
 </ol>
+
 
 
 
