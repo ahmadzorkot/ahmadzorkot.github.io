@@ -187,7 +187,6 @@ collections:
 
 # These settings control how pages and collections are included in the site
 defaults:
-
   - scope:
       path: ""
       type: "pages"
