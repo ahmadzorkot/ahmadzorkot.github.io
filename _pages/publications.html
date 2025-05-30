@@ -6,38 +6,37 @@ author_profile: true
 ---
 
 <h1>Publications</h1>
-
 {% if site.author.googlescholar %}
-<p>You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</p>
+  <p>You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</p>
 {% endif %}
 
+{% assign counter = 1 %}
+
 <h2>Published Articles</h2>
-<ol>
-  {% assign published = site.publications | where: "category", "journal" | sort: "date" | reverse %}
-  {% for post in published %}
-    <li>
-      {{ post.author }}. <em>{{ post.title }}</em>. {{ post.venue }}, {{ post.date | date: "%Y" }}.
-      {% if post.paperurl %} <a href="{{ post.paperurl }}">[article]</a>{% endif %}
-      {% if post.arxivurl %} <a href="{{ post.arxivurl }}">[arXiv]</a>{% endif %}
-      {% if post.bibtexurl %} <a href="{{ post.bibtexurl }}">[BibTeX]</a>{% endif %}
-    </li>
+<ul class="publication-list">
+  {% for post in site.publications reversed %}
+    {% if post.category == "journal" %}
+      <li>
+        {{ counter }}. {{ post.author }}. <strong>{{ post.title }}</strong>. <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}.
+        {% if post.paperurl %}<a href="{{ post.paperurl }}">[article]</a>{% endif %}
+        {% if post.arxivurl %}<a href="{{ post.arxivurl }}">[arXiv]</a>{% endif %}
+      </li>
+      {% assign counter = counter | plus: 1 %}
+    {% endif %}
   {% endfor %}
-</ol>
+</ul>
 
 <h2>Preprints</h2>
-<ol>
-  {% assign preprints = site.publications | where: "category", "preprint" | sort: "date" | reverse %}
-  {% for post in preprints %}
-    <li>
-      {{ post.author }}. <em>{{ post.title }}</em>. {{ post.venue }}, {{ post.date | date: "%Y" }}.
-      {% if post.paperurl %} <a href="{{ post.paperurl }}">[article]</a>{% endif %}
-      {% if post.arxivurl %} <a href="{{ post.arxivurl }}">[arXiv]</a>{% endif %}
-      {% if post.bibtexurl %} <a href="{{ post.bibtexurl }}">[BibTeX]</a>{% endif %}
-    </li>
+<ul class="publication-list">
+  {% assign counter = 1 %}
+  {% for post in site.publications reversed %}
+    {% if post.category == "preprint" %}
+      <li>
+        {{ counter }}. {{ post.author }}. <strong>{{ post.title }}</strong>. <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}.
+        {% if post.paperurl %}<a href="{{ post.paperurl }}">[article]</a>{% endif %}
+        {% if post.arxivurl %}<a href="{{ post.arxivurl }}">[arXiv]</a>{% endif %}
+      </li>
+      {% assign counter = counter | plus: 1 %}
+    {% endif %}
   {% endfor %}
-</ol>
-
-
-
-
-
+</ul>
