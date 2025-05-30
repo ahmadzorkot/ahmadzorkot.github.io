@@ -1,16 +1,32 @@
 ---
 layout: archive
 title: "Talks and presentations"
-permalink: /talks/
-author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+<h1>{{ page.title }}</h1>
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<h2>Talks</h2>
+<ol>
+  {% assign talks = site.talks | where: "type", "talk" | sort: "date" | reverse %}
+  {% for talk in talks %}
+    <li>
+      <strong>{{ talk.title }}</strong><br>
+      <small>{{ talk.date | date: "%B %d, %Y" }}</small><br>
+      {{ talk.description }}<br>
+      <a href="{{ talk.conference_url }}" target="_blank">{{ talk.conference_abbrev }}</a>
+    </li>
+  {% endfor %}
+</ol>
 
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+<h2>Posters</h2>
+<ol>
+  {% assign posters = site.talks | where: "type", "poster" | sort: "date" | reverse %}
+  {% for poster in posters %}
+    <li>
+      <strong>{{ poster.title }}</strong><br>
+      <small>{{ poster.date | date: "%B %d, %Y" }}</small><br>
+      {{ poster.description }}<br>
+      <a href="{{ poster.conference_url }}" target="_blank">{{ poster.conference_abbrev }}</a>
+    </li>
+  {% endfor %}
+</ol>
