@@ -14,7 +14,7 @@ title_separator          : "-"
 name                     : &name "Ahmad Zorkot"
 description              : &description "personal description"
 url                      : "https://ahmadzorkot.github.io"
-repository               : "academicpages/academicpages.github.io"
+repository               : "ahmadzorkot/ahmadzorkot.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
