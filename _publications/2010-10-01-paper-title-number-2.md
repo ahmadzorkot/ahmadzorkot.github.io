@@ -1,5 +1,5 @@
 ---
-author: "E. Carlini, F. J. Silva and Ahmad Zorkot"
+author: "J. Gianatti, F. J. Silva and Ahmad Zorkot"
 title: "Approximation of deterministic mean field games under polynomial growth conditions on the data"
 collection: publications
 category: journal
