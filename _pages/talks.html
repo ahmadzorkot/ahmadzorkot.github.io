@@ -1,32 +1,24 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks and Presentations"
+permalink: /talks/
 ---
 
-<h1>{{ page.title }}</h1>
+{% for category_key in site.talks_category %}
+  {% assign cat_name = category_key[0] %}
+  {% assign cat_title = category_key[1].title %}
+  
+  <h2>{{ cat_title }}</h2>
+  <ol>
+    {% for talk in site.talks %}
+      {% if talk.category == cat_name %}
+        <li>
+          <strong>{{ talk.title }}</strong><br />
+          <a href="{{ talk.conference_url }}" target="_blank">{{ talk.conference_abbrev }}</a> — {{ talk.date | date: "%B %d, %Y" }}<br />
+          {{ talk.description }}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+{% endfor %}
 
-<h2>Talks</h2>
-<ol>
-  {% assign talks = site.talks | where: "type", "talk" | sort: "date" | reverse %}
-  {% for talk in talks %}
-    <li>
-      <strong>{{ talk.title }}</strong><br>
-      <small>{{ talk.date | date: "%B %d, %Y" }}</small><br>
-      {{ talk.description }}<br>
-      <a href="{{ talk.conference_url }}" target="_blank">{{ talk.conference_abbrev }}</a>
-    </li>
-  {% endfor %}
-</ol>
-
-<h2>Posters</h2>
-<ol>
-  {% assign posters = site.talks | where: "type", "poster" | sort: "date" | reverse %}
-  {% for poster in posters %}
-    <li>
-      <strong>{{ poster.title }}</strong><br>
-      <small>{{ poster.date | date: "%B %d, %Y" }}</small><br>
-      {{ poster.description }}<br>
-      <a href="{{ poster.conference_url }}" target="_blank">{{ poster.conference_abbrev }}</a>
-    </li>
-  {% endfor %}
-</ol>
