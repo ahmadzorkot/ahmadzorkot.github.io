@@ -187,6 +187,12 @@ collections:
 
 # These settings control how pages and collections are included in the site
 defaults:
+
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      author_profile: true
  
   # _teaching
   - scope:
