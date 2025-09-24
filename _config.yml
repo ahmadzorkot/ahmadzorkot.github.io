@@ -24,9 +24,9 @@ author:
   avatar           : "profile.png"
   name             : "Ahmad Zorkot" 
   bio              : "PhD in applied mathematics"
-  location         : "Limoges, France"
-  employer         : "Limoges university"
-  email            : "ahmadzorkot2@gmail.com" 
+  location         : "Vienna, Austira"
+  employer         : "University of Vienna"
+  email            : "ahmadz27@univie.ac.at" 
   # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
