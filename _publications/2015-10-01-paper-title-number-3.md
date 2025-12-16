@@ -1,7 +1,6 @@
-
 ---
-author: "E. Carlini and Ahmad Zorkot"
 title: "Newton Methods for Mean Field Games: A Numerical Study"
+author: "E. Carlini and Ahmad Zorkot"
 collection: publications
 category: preprint
 date: 2025-12-01
