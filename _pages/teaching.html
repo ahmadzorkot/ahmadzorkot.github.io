@@ -1,4 +1,5 @@
 ---
+---
 layout: archive
 title: "Teaching"
 permalink: /teaching/
@@ -10,16 +11,13 @@ author_profile: true
 <ul>
 {% for t in items %}
   <li>
-    {{ t.date_range | default: (t.title | replace: "University of Limoges (", "" | replace: ")", "") }}: {{ t.venue }}
-    {% if t.hours %}
-      <br>
-      <strong>{{ t.hours }} hours:</strong>
-    {% endif %}
+    <strong>{{ t.date_range }}</strong>: {{ t.venue }}
+    {% if t.hours %}<br><strong>{{ t.hours }} hours</strong>{% endif %}
 
-    {% if t.courses %}
+    {% if t.tutorials %}
       <ul>
-        {% for c in t.courses %}
-          <li>{{ c }}</li>
+        {% for s in t.tutorials %}
+          <li>{{ s }}</li>
         {% endfor %}
       </ul>
     {% endif %}
