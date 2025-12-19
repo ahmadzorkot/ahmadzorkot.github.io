@@ -5,13 +5,12 @@ type: "Teaching"
 permalink: /teaching/2023-2024-university-of-limoges
 venue: "University of Limoges"
 date: 2024-01-01
-location: "Limoges, France"
+date_range: "2023–2024"
+hours: 144
+tutorials:
+  - "Math for Sciences (exercise sessions)"
+  - "Fundamentals of Mathematics (exercise sessions)"
+  - "Measure Theory (exercise sessions)"
+  - "Optimization (exercise sessions)"
+  - "Calculus of Variations (exercise sessions)"
 ---
-**144 hours teaching**
-
-Courses:
-1. Math for Sciences
-2. Fundamentals of Mathematics
-3. Measure Theory
-4. Optimization
-5. Calculus of Variations
