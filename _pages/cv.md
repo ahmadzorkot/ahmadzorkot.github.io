@@ -6,7 +6,7 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-You can find my full CV [here](https://drive.google.com/file/d/1s4jg-f7KhLtcneif5v7vgR3PSJQZjSuO/view?usp=sharing).
+You can find my full CV [here](https://drive.google.com/file/d/1EaSlL479pKav3M1U43i5vdw5mfOA57oO/view?usp=drive_link).
 {% include base_path %}
 
 Education
