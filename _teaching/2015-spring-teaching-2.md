@@ -7,8 +7,8 @@ institutions:
   - name: "University of Vienna"
     location: "Vienna, Austria"
     years:
-      - year: "2024–2025"
-        hours: 0
+      - year: "2025–2026"
+        hours: 40
         tutorials:
           - "Analysis 1 (exercise sessions)"
   - name: "University of Limoges"
