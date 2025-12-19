@@ -1,15 +1,35 @@
 ---
-title: "University of Limoges (2023–2024)"
+title: "Teaching"
 collection: teaching
-type: "Teaching"
-venue: "University of Limoges"
-date: 2024-01-01
-date_range: "2023–2024"
-hours: 144
-tutorials:
-  - "Math for Sciences"
-  - "Fundamentals of Mathematics"
-  - "Measure Theory"
-  - "Optimization"
-  - "Calculus of Variations"
+venue: "Teaching"
+date: 2025-01-01
+institutions:
+  - name: "University of Vienna"
+    location: "Vienna, Austria"
+    years:
+      - year: "2024–2025"
+        hours: 0
+        tutorials:
+          - "Add your subject here (exercise sessions)"
+  - name: "University of Limoges"
+    location: "Limoges, France"
+    years:
+      - year: "2023–2024"
+        hours: 144
+        tutorials:
+          - "Math for Sciences (exercise sessions)"
+          - "Fundamentals of Mathematics (exercise sessions)"
+          - "Measure Theory (exercise sessions)"
+          - "Optimization (exercise sessions)"
+          - "Calculus of Variations (exercise sessions)"
+      - year: "2022–2023"
+        hours: 36
+        tutorials:
+          - "Math for Sciences (exercise sessions)"
+      - year: "2021–2022"
+        hours: 64
+        tutorials:
+          - "Linear Algebra (exercise sessions)"
+          - "Probability (exercise sessions)"
+          - "Real Analysis (exercise sessions)"
 ---
