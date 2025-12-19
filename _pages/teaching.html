@@ -6,13 +6,14 @@ author_profile: true
 ---
 
 {% assign items = site.teaching | sort: "date" | reverse %}
+{% assign t = items[0] %}
 
-{% for t in items %}
-  <h3>{{ t.venue }}</h3>
-  {% if t.location %}<p>{{ t.location }}</p>{% endif %}
+{% for inst in t.institutions %}
+  <h3>{{ inst.name }}</h3>
+  {% if inst.location %}<p>{{ inst.location }}</p>{% endif %}
 
   <ul>
-    {% for block in t.tutorials_by_year %}
+    {% for block in inst.years %}
       <li>
         <strong>{{ block.year }}</strong>: <strong>{{ block.hours }} hours</strong>
         <ul>
