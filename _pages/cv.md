@@ -24,6 +24,7 @@ Skills
 ======
 * Matlab
 * Pyhton
+* Julia
 * Latex
 * Github
 
