@@ -10,7 +10,7 @@ institutions:
       - year: "2024–2025"
         hours: 0
         tutorials:
-          - "Add your subject here (exercise sessions)"
+          - "Analysis 1 (exercise sessions)"
   - name: "University of Limoges"
     location: "Limoges, France"
     years:
