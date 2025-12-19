@@ -8,10 +8,16 @@ author_profile: true
 {% assign items = site.teaching | sort: "date" | reverse %}
 
 {% for t in items %}
-  <h3><a href="{{ t.url }}">{{ t.title }}</a></h3>
-  {% if t.venue %}<p><strong>{{ t.venue }}</strong>{% endif %}{% if t.location %} — {{ t.location }}{% endif %}</p>
-  <p><em>{{ t.date | date: "%Y" }}</em></p>
+  <h3>{{ t.title }}</h3>
+
+  {% if t.venue or t.location %}
+  <p>
+    {% if t.venue %}<strong>{{ t.venue }}</strong>{% endif %}
+    {% if t.location %} — {{ t.location }}{% endif %}
+  </p>
+  {% endif %}
 
   {{ t.content }}
-  <hr/>
+
+  <hr>
 {% endfor %}
