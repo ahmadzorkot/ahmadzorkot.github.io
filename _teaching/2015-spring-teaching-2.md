@@ -1,27 +1,17 @@
 ---
-title: "Teaching experience 2"
+title: "University of Limoges (2023–2024)"
 collection: teaching
-type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
+type: "Teaching"
+permalink: /teaching/2023-2024-university-of-limoges
+venue: "University of Limoges"
+date: 2024-01-01
+location: "Limoges, France"
 ---
+**144 hours teaching**
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-title: "Teaching experience 2"
-collection: teaching
-type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
-======
-
-Heading 2
-======
-
-Heading 3
-======
+Courses:
+1. Math for Sciences
+2. Fundamentals of Mathematics
+3. Measure Theory
+4. Optimization
+5. Calculus of Variations
