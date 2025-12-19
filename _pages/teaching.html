@@ -1,5 +1,4 @@
 ---
----
 layout: archive
 title: "Teaching"
 permalink: /teaching/
@@ -11,16 +10,13 @@ author_profile: true
 <ul>
 {% for t in items %}
   <li>
-    <strong>{{ t.date_range }}</strong>: {{ t.venue }}
-    {% if t.hours %}<br><strong>{{ t.hours }} hours</strong>{% endif %}
-
-    {% if t.tutorials %}
-      <ul>
-        {% for s in t.tutorials %}
-          <li>{{ s }}</li>
-        {% endfor %}
-      </ul>
-    {% endif %}
+    <strong>{{ t.date_range }}</strong>: {{ t.venue }}<br>
+    <strong>{{ t.hours }} hours:</strong>
+    <ul>
+      {% for s in t.tutorials %}
+        <li>{{ s }}</li>
+      {% endfor %}
+    </ul>
   </li>
 {% endfor %}
 </ul>
