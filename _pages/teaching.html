@@ -7,17 +7,22 @@ author_profile: true
 
 {% assign items = site.teaching | sort: "date" | reverse %}
 
+<ul>
 {% for t in items %}
-  <h3>{{ t.title }}</h3>
+  <li>
+    {{ t.date_range | default: (t.title | replace: "University of Limoges (", "" | replace: ")", "") }}: {{ t.venue }}
+    {% if t.hours %}
+      <br>
+      <strong>{{ t.hours }} hours:</strong>
+    {% endif %}
 
-  {% if t.venue or t.location %}
-  <p>
-    {% if t.venue %}<strong>{{ t.venue }}</strong>{% endif %}
-    {% if t.location %} — {{ t.location }}{% endif %}
-  </p>
-  {% endif %}
-
-  {{ t.content }}
-
-  <hr>
+    {% if t.courses %}
+      <ul>
+        {% for c in t.courses %}
+          <li>{{ c }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </li>
 {% endfor %}
+</ul>
