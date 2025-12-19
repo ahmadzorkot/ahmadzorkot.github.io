@@ -7,16 +7,22 @@ author_profile: true
 
 {% assign items = site.teaching | sort: "date" | reverse %}
 
-<ul>
 {% for t in items %}
-  <li>
-    <strong>{{ t.date_range }}</strong>: {{ t.venue }}<br>
-    <strong>{{ t.hours }} hours:</strong>
-    <ul>
-      {% for s in t.tutorials %}
-        <li>{{ s }}</li>
-      {% endfor %}
-    </ul>
-  </li>
+  <h3>{{ t.venue }}</h3>
+  {% if t.location %}<p>{{ t.location }}</p>{% endif %}
+
+  <ul>
+    {% for block in t.tutorials_by_year %}
+      <li>
+        <strong>{{ block.year }}</strong>: <strong>{{ block.hours }} hours</strong>
+        <ul>
+          {% for s in block.tutorials %}
+            <li>{{ s }}</li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <hr>
 {% endfor %}
-</ul>
