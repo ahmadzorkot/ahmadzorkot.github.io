@@ -11,6 +11,7 @@ institutions:
         hours: 40
         tutorials:
           - "Analysis 1 (exercise sessions)"
+          - "Analysis for data science (exercise sessions)"
   - name: "University of Limoges"
     location: "Limoges, France"
     years:
