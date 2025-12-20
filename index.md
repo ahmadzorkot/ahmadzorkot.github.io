@@ -1,7 +1,7 @@
 ---
 layout: archive
 author_profile: true
-title: ""
+title: "Ahmad Zorkot"
 ---
 
 Starting from October 2025, I am a postdoctoral researcher at the university of Vienna, in the group of Professor [Olga Mula](https://omula.gitlab.io/). I received my PhD in Applied Mathematics at the University of Limoges in June 2024, where my thesis was about numerical approximation to mean field games, under the supervision of [Francisco J. Silva](https://sites.google.com/view/franciscojosesilva/) and [Elisabetta Carlini](https://www1.mat.uniroma1.it/people/carlini/Personal.html).
