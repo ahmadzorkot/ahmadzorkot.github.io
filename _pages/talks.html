@@ -5,10 +5,10 @@ permalink: /talks/
 author_profile: true
 ---
 
-{% assign all = site.talks | sort: "date" | reverse %}
-{% assign t = all[0] %}
+{% assign t = site.talks | where_exp: "d", "d.talks" | first %}
 
 <h2>Talks</h2>
+{% if t and t.talks %}
 <ul>
   {% assign talks_sorted = t.talks | sort: "date" | reverse %}
   {% for x in talks_sorted %}
@@ -20,9 +20,12 @@ author_profile: true
     </li>
   {% endfor %}
 </ul>
+{% else %}
+  <p>No talks listed yet.</p>
+{% endif %}
 
 <h2>Posters</h2>
-{% if t.posters and t.posters.size > 0 %}
+{% if t and t.posters and t.posters.size > 0 %}
   <ul>
     {% assign posters_sorted = t.posters | sort: "date" | reverse %}
     {% for x in posters_sorted %}
