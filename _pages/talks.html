@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Confrences and talks"
+title: "Conferences and Talks"
 permalink: /talks/
 author_profile: true
 ---
@@ -13,10 +13,10 @@ author_profile: true
   {% assign talks_sorted = t.talks | sort: "date" | reverse %}
   {% for x in talks_sorted %}
     <li>
-      <strong>{{ x.date | date: "%m/%Y" }}</strong> — {{ x.event }} ({{ x.location }})
-      {% if x.type %} — <em>{{ x.type }}</em>{% endif %}
-      {% if x.url %} <a href="{{ x.url }}">[link]</a>{% endif %}
-      {% if x.slidesurl %} <a href="{{ x.slidesurl }}">[slides]</a>{% endif %}
+      <strong>
+        {% if x.event_url %}<a href="{{ x.event_url }}" target="_blank" rel="noopener noreferrer">{{ x.event }}</a>{% else %}{{ x.event }}{% endif %}
+      </strong>, {{ x.location }} &middot; {{ x.date | date: "%B %Y" }}
+      {% if x.title %}<br><em>{{ x.title }}</em>{% endif %}
     </li>
   {% endfor %}
 </ul>
@@ -27,10 +27,10 @@ author_profile: true
     {% assign posters_sorted = t.posters | sort: "date" | reverse %}
     {% for x in posters_sorted %}
       <li>
-        <strong>{{ x.date | date: "%m/%Y" }}</strong> — {{ x.event }} ({{ x.location }})
-        {% if x.type %} — <em>{{ x.type }}</em>{% endif %}
-        {% if x.url %} <a href="{{ x.url }}">[link]</a>{% endif %}
-        {% if x.posterurl %} <a href="{{ x.posterurl }}">[poster]</a>{% endif %}
+        <strong>
+          {% if x.event_url %}<a href="{{ x.event_url }}" target="_blank" rel="noopener noreferrer">{{ x.event }}</a>{% else %}{{ x.event }}{% endif %}
+        </strong>, {{ x.location }} &middot; {{ x.date | date: "%B %Y" }}
+        {% if x.title %}<br><em>{{ x.title }}</em>{% endif %}
       </li>
     {% endfor %}
   </ul>
