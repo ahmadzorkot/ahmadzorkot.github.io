@@ -6,8 +6,6 @@ permalink: /teaching/
 author_profile: true
 ---
 
-{% capture teaching_content %}
-
 ## University of Vienna
 *Vienna, Austria*
 
@@ -38,8 +36,3 @@ author_profile: true
 - Linear Algebra (exercise sessions)
 - Probability (exercise sessions)
 - Real Analysis (exercise sessions)
-
-{% endcapture %}
-
-{{ teaching_content | markdownify }}
-
