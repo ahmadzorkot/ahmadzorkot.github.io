@@ -1,5 +1,11 @@
 ---
 talks:
+  - date: 2026-09-02
+    event: "Numerical methods for Hamilton-Jacobi and mean-field PDEs"
+    event_url: "https://icms.ac.uk/activities/workshop/hamilton-jacobi-and-mean-field-pdes/"
+    location: "Edinburgh, UK"
+    title: "An Adaptive Gaussian-Based Time Integrator for Fokker–Planck Equations"
+    
   - date: 2026-07-10
     event: "AIMS 2026"
     event_url: "https://www.aimsconference.org/conferences/2026/"
