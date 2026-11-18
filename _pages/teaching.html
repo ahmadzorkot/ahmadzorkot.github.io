@@ -1,3 +1,4 @@
+
 ---
 layout: archive
 title: "Teaching"
@@ -5,25 +6,43 @@ permalink: /teaching/
 author_profile: true
 ---
 
-{% assign items = site.teaching | sort: "date" | reverse %}
-{% assign t = items[0] %}
+<h2>University of Vienna</h2>
+<p>Vienna, Austria</p>
 
-{% for inst in t.institutions %}
-  <h3>{{ inst.name }}</h3>
-  {% if inst.location %}<p>{{ inst.location }}</p>{% endif %}
+<h3>2026–2027 (40 hours)</h3>
+<ul>
+  <li>Optimisation and Numerical Algorithms (exercise sessions)</li>
+  <li>Foundations of Machine Learning (exercise sessions)</li>
+</ul>
 
-  <ul>
-    {% for block in inst.years %}
-      <li>
-        <strong>{{ block.year }}</strong>: <strong>{{ block.hours }} hours</strong>
-        <ul>
-          {% for s in block.tutorials %}
-            <li>{{ s }}</li>
-          {% endfor %}
-        </ul>
-      </li>
-    {% endfor %}
-  </ul>
+<h3>2025–2026 (40 hours)</h3>
+<ul>
+  <li>Analysis 1 (exercise sessions)</li>
+  <li>Analysis for Data Science (exercise sessions)</li>
+</ul>
 
-  <hr>
-{% endfor %}
+<hr>
+
+<h2>University of Limoges</h2>
+<p>Limoges, France</p>
+
+<h3>2023–2024 (144 hours)</h3>
+<ul>
+  <li>Math for Sciences (exercise sessions)</li>
+  <li>Fundamentals of Mathematics (exercise sessions)</li>
+  <li>Measure Theory (exercise sessions)</li>
+  <li>Optimization (exercise sessions)</li>
+  <li>Calculus of Variations (exercise sessions)</li>
+</ul>
+
+<h3>2022–2023 (36 hours)</h3>
+<ul>
+  <li>Math for Sciences (exercise sessions)</li>
+</ul>
+
+<h3>2021–2022 (64 hours)</h3>
+<ul>
+  <li>Linear Algebra (exercise sessions)</li>
+  <li>Probability (exercise sessions)</li>
+  <li>Real Analysis (exercise sessions)</li>
+</ul>
