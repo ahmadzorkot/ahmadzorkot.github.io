@@ -7,6 +7,11 @@ institutions:
   - name: "University of Vienna"
     location: "Vienna, Austria"
     years:
+     - year: "2026–2027"
+        hours: 40
+        tutorials:
+          - "Optimisation and Numerical Algorithms (exercise sessions)"
+          - "Foundations of Machine Learning (exercise sessions)"
       - year: "2025–2026"
         hours: 40
         tutorials:
