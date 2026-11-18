@@ -1,47 +1,60 @@
 
+
 ---
+layout: archive
 title: "Teaching"
-collection: teaching
-venue: "Teaching"
-date: 2025-01-01
-
-institutions:
-  - name: "University of Vienna"
-    location: "Vienna, Austria"
-    years:
-      - year: "2026–2027"
-        hours: 40
-        tutorials:
-          - "Optimisation and Numerical Algorithms (exercise sessions)"
-          - "Foundations of Machine Learning (exercise sessions)"
-
-      - year: "2025–2026"
-        hours: 40
-        tutorials:
-          - "Analysis 1 (exercise sessions)"
-          - "Analysis for data science (exercise sessions)"
-
-  - name: "University of Limoges"
-    location: "Limoges, France"
-    years:
-      - year: "2023–2024"
-        hours: 144
-        tutorials:
-          - "Math for Sciences (exercise sessions)"
-          - "Fundamentals of Mathematics (exercise sessions)"
-          - "Measure Theory (exercise sessions)"
-          - "Optimization (exercise sessions)"
-          - "Calculus of Variations (exercise sessions)"
-
-      - year: "2022–2023"
-        hours: 36
-        tutorials:
-          - "Math for Sciences (exercise sessions)"
-
-      - year: "2021–2022"
-        hours: 64
-        tutorials:
-          - "Linear Algebra (exercise sessions)"
-          - "Probability (exercise sessions)"
-          - "Real Analysis (exercise sessions)"
+permalink: /teaching/
+author_profile: true
 ---
+
+<h2>University of Vienna</h2>
+<p>Vienna, Austria</p>
+
+<ul>
+  <li>
+    <strong>2026–2027: 40 hours</strong>
+    <ul>
+      <li>Optimisation and Numerical Algorithms (exercise sessions)</li>
+      <li>Foundations of Machine Learning (exercise sessions)</li>
+    </ul>
+  </li>
+  <li>
+    <strong>2025–2026: 40 hours</strong>
+    <ul>
+      <li>Analysis 1 (exercise sessions)</li>
+      <li>Analysis for Data Science (exercise sessions)</li>
+    </ul>
+  </li>
+</ul>
+
+<hr>
+
+<h2>University of Limoges</h2>
+<p>Limoges, France</p>
+
+<ul>
+  <li>
+    <strong>2023–2024: 144 hours</strong>
+    <ul>
+      <li>Math for Sciences (exercise sessions)</li>
+      <li>Fundamentals of Mathematics (exercise sessions)</li>
+      <li>Measure Theory (exercise sessions)</li>
+      <li>Optimization (exercise sessions)</li>
+      <li>Calculus of Variations (exercise sessions)</li>
+    </ul>
+  </li>
+  <li>
+    <strong>2022–2023: 36 hours</strong>
+    <ul>
+      <li>Math for Sciences (exercise sessions)</li>
+    </ul>
+  </li>
+  <li>
+    <strong>2021–2022: 64 hours</strong>
+    <ul>
+      <li>Linear Algebra (exercise sessions)</li>
+      <li>Probability (exercise sessions)</li>
+      <li>Real Analysis (exercise sessions)</li>
+    </ul>
+  </li>
+</ul>
