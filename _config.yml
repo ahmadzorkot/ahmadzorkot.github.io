@@ -21,7 +21,7 @@ repository               : "ahmadzorkot/ahmadzorkot.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg" 
   name             : "Ahmad Zorkot" 
   bio              : "PhD in applied mathematics"
   location         : "Vienna, Austira"
