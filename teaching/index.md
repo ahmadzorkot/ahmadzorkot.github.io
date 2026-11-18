@@ -1,10 +1,4 @@
 
----
-layout: archive
-title: "Teaching"
-permalink: /teaching/
-author_profile: true
----
 
 ## University of Vienna
 *Vienna, Austria*
